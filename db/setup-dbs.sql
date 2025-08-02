@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS branches;
+CREATE DATABASE branches;
+
+DROP DATABASE IF EXISTS branches_test;
+CREATE DATABASE branches_test;
