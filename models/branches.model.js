@@ -24,7 +24,7 @@ const fetchBranch = function (name) {
     if (branches.length === 0) {
       return Promise.reject({
         status: 404,
-        msg: `No branches found`,
+        msg: `Branch not found`,
       });
     }
     return { branch: branches[0] };
