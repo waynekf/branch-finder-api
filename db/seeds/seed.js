@@ -3,8 +3,6 @@ var format = require("pg-format");
 const { getBranches } = require("../seeds/utils.js");
 
 const seed = ({ branchesData }) => {
-  console.log(branchesData, "<<<---");
-
   return db
     .query(`DROP TABLE IF EXISTS Branches`)
     .then(() => {

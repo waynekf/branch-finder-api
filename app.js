@@ -1,15 +1,20 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const { getBranches } = require("./controllers/branches.controller.js");
+const {
+  getBranches,
+  getBranch,
+} = require("./controllers/branches.controller.js");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
 
-app.get("/", greet);
-
 app.get("/api/branches", getBranches);
+
+app.get("/api/branches/:name", getBranches);
+
+app.get("/api/branch/:name", getBranch);
 
 app.use((err, req, res, next) => {
   if (err.status === 400) {

@@ -19,4 +19,14 @@ module.exports = [
       postcode: "BD161AJ",
     },
   },
+  {
+    name: "Guiseley",
+    address: {
+      addressLine1: "40 Otley Road",
+      addressLine2: "",
+      town: "Guiseley",
+      county: "West Yorkshire",
+      postcode: "LS208AH",
+    },
+  },
 ];
